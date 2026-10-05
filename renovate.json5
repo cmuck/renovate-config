@@ -1,0 +1,41 @@
+{
+  // https://docs.renovatebot.com/configuration-options/#schema
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
+  // https://docs.renovatebot.com/configuration-options/#extends
+  "extends": [
+    "config:best-practices",
+  ],
+
+  // https://docs.renovatebot.com/configuration-options/#configmigration
+  "configMigration": true,
+
+  // https://docs.renovatebot.com/configuration-options/#lockfilemaintenance
+  "lockFileMaintenance": {
+    // https://docs.renovatebot.com/configuration-options/#enabled
+    "enabled": true,
+
+    // https://docs.renovatebot.com/configuration-options/#schedule
+    "schedule": [
+      "before 4am on the first day of the month",
+    ],
+  },
+
+  // https://docs.renovatebot.com/configuration-options/#packagerules
+  "packageRules": [
+    {
+      // https://docs.renovatebot.com/configuration-options/#matchdatasources
+      "matchDatasources": [
+        "*",
+      ],
+
+      // https://docs.renovatebot.com/configuration-options/#minimumreleaseage
+      "minimumReleaseAge": "14 days",
+    },
+  ],
+
+  // https://docs.renovatebot.com/configuration-options/#labels
+  "labels": [
+    "dependencies",
+  ],
+}

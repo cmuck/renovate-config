@@ -1,0 +1,26 @@
+[project]
+name = "renovate-config"
+version = "0.1.0"
+description = "renovate-config"
+readme = "README.md"
+authors = [{ name = "cmuck", email = "cmuckmuck@gmail.com" }]
+license = { file = "LICENSE.md" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+]
+keywords = ["renovate"]
+
+requires-python = ">= 3.14"
+
+dependencies = [
+    "mdformat>=1.0.0",
+    "pre-commit>=4.6.2",
+    "pyright>=1.1.414",
+    "pyupgrade>=3.21.2",
+    "ruff>=0.16.10",
+]
+
+[project.urls]
+Homepage = "https://github.com/cmuck/renovate-config"
