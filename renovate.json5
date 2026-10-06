@@ -38,4 +38,8 @@
   "labels": [
     "dependencies",
   ],
+
+  "ignorePaths": [
+    "**/archive/**"
+  ],
 }
