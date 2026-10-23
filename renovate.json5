@@ -33,9 +33,10 @@
       "minimumReleaseAge": "14 days",
     },
     {
-      // Keep each digest pin in its own PR instead of bundling several digest updates together.
+      // Keep each digest pin and digest update in its own PR.
       "matchUpdateTypes": [
         "digest",
+        "pinDigest",
       ],
       "groupName": null,
     },
