@@ -32,6 +32,13 @@
       // https://docs.renovatebot.com/configuration-options/#minimumreleaseage
       "minimumReleaseAge": "14 days",
     },
+    {
+      // Keep each digest pin in its own PR instead of bundling several digest updates together.
+      "matchUpdateTypes": [
+        "digest",
+      ],
+      "groupName": null,
+    },
   ],
 
   // https://docs.renovatebot.com/configuration-options/#labels
